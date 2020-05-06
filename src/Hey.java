@@ -11,5 +11,6 @@ public class Hey
     {
         // void is used to show that the method will not be returning anything.
         System.out.println("Hello Java. This is our Universe!");
+        // The stuff in " " is known as literal string
     }
 }
