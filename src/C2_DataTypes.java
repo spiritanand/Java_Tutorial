@@ -1,4 +1,4 @@
-public class Var {
+public class C2_DataTypes {
     public static void main (String[] args)
     {
         /*
@@ -171,6 +171,70 @@ public class Var {
         calculations are required. This is due to a limitation of how floating point numbers are stored and not
         a Java problem as such.
         To overcome this problem Java has a class named 'BigDecimal'.
+         */
+
+        // Now let us take a look at the primitive data type namely the char.
+
+        /*
+        The char and the String data type are different. We have previously seen String literals in this course
+        . They are similar only in the sense that both store characters but char only literally stores one
+        character. You would think that the char would take 1 byte of memory, but it actually takes 2 bytes
+        (16 bits) of memory. It is due to the fact that it allows you to store Unicode characters.
+        Unicode is international encoding standard for use with different languages and scripts, by which each
+        letter, digit, symbol, etc. are represented by a unique numeric value that applies across different
+        platforms and programs.
+        To see all the different numeric values assigned see 'unicode-table.com'.
+         */
+
+        char myChar = 'S';
+        System.out.println(myChar);
+        // Output - S
+
+        // To represent a char in unicode numeric value we have to use '\'+'u' before the numeric value.
+        char myUniChar = '\u0053';
+        System.out.println(myUniChar);
+        // Output - S
+
+        // Now let us take a look at the last primitive data type boolean.
+
+        /*
+        The boolean data type stores only two types of values, true and false. This data type is very useful in
+        programming as we will see in the future.
+         */
+
+        boolean isSpiritBadass = true;
+        System.out.println(isSpiritBadass);
+        // Output - true
+
+        // So here it is we have covered all the 8 primitive data types in Java.
+
+        /*
+        Now lets discuss about another important data type, String. Now the String is not a primitive data type
+         rather it is a class, but it enjoys a special treatment than other classes.
+        A String is can contain a sequence of characters. Technically it is limited by the memory or the
+        MAX-VALUE of int which is 2.14 billion characters.
+         */
+
+        String myStr = "SpiritMonster";
+        System.out.println(myStr);
+        // Output - SpiritMonster
+        String myStrNum1 = "4";
+        String mySum = myStrNum1 + 2;
+        // The output here would be different than what you would think. Here as we are adding an int to a String
+        // the int gets converted to a String and hence the output is not 6 rather 42.
+        System.out.println("The (\u2211) sum of the two is :- "+ mySum);
+        // Output - The (∑) sum of the two is :- 42
+        // In String we can use unicode characters as well, so the String data type is very versatile.
+        String newStr = myStr + mySum;
+        System.out.println(newStr);
+        // Output - SpiritMonster42
+
+        /*
+        Strings are immutable that is you cannot change a String after its creation. So the way that we append
+        to a String is in such a way that a new String is created in the appended form and the old String is
+        deleted from memory. Using + to append strings is a really inefficient way to append to Strings and
+        isn't recommended. Rather we will use the StringBuffer which can be changed. We will see this in a
+        future section.
          */
     }
 }

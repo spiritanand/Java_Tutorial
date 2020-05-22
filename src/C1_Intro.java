@@ -1,4 +1,4 @@
-public class Hey
+public class C1_Intro
 {
     /* public is an access modifier. An access modifier allows us to define the scope
     * public gives us full access. */
