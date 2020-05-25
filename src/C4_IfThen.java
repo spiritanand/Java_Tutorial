@@ -11,6 +11,7 @@ public class C4_IfThen {
 
         boolean isBeast = false;
         // The '==' checks whether the RHS and LHS are literally the same and returns a boolean.
+        // It is different from the '=' symbol which is used for value assignment of a variable.
         if (isBeast == false)
             System.out.println("I am not scared of Beasts.");
             System.out.println("I am though.");// We do not see any use of the code block.
