@@ -1,11 +1,9 @@
 public class CodingExercises1 {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         /*
         This section will contain a few different coding exercise of the course that I am following. Here we
-        will test our different methods.
+        can test our different methods.
          */
-        // System.out.println(areEqualByThreeDecimalPlaces(3.176,3.175)); // --> Decimal Comparator check
-
     }
     // This will contain all the methods required for all the coding exercises
 
@@ -82,5 +80,41 @@ public class CodingExercises1 {
 
 
     // 7.Has Teen Value
+
+
+    // 8. Area Calculator
+
+
+//    // 9. Minutes to Years and Days Calculator
+//    public static void printYearsAndDays(long minutes){
+//        if (minutes<0){
+//            System.out.println("Invalid Value");
+//        }else{
+//            long minutesDays = ((minutes/60)/24);
+//            long years = minutesDays/365L;
+//            long days = minutesDays%365L;
+//            System.out.println(minutes+" min = "+years+" y and "+days+" d");
+//        }
+//
+//    }
+
+
+    // 10.Equality Printer
+
+
+//    // 11. Playing Cat
+//    public static boolean isCatPlaying(boolean summer, int temperature) {
+//        if (summer) {
+//            if ((25 <= temperature) && (temperature <= 45)) {
+//                return true;
+//            }
+//        } else {
+//            if ((25 <= temperature) && (temperature <= 35)) {
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
+
 
 }
