@@ -1,5 +1,5 @@
 public class C9_ForLoop {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         // Suppose you want to write the code to print numbers from one to hundred or print all the compound
         // interest over a principal and a rate over the time period of 25 years.
         // Whew!!!! That is a tough job to write so much code; so many System.out.println(1);..........
@@ -28,10 +28,10 @@ public class C9_ForLoop {
 
         double p = 10_000; // Principal
         double r = 5; // Rate
-        for(int i = 1;i<11;i++){
-            double interest = p * r /100;
+        for (int i = 1; i < 11; i++) {
+            double interest = p * r / 100;
             p += interest;
-            System.out.println("The principal after "+i+" years is "+p+" and the interest was "+interest);
+            System.out.println("The principal after " + i + " years is " + p + " and the interest was " + interest);
         }
         // This is how the for loop works. Experiment yourself to see the power of loops.
     }

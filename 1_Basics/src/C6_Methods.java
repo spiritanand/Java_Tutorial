@@ -1,5 +1,5 @@
 public class C6_Methods {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         /*
         As we tackle more complex code we will see that we will need the same code in multiple places like in a
          game where the calculation of score and other such parts need to be modular. This increases the
@@ -41,13 +41,13 @@ public class C6_Methods {
         int score = 2000;
         int levelCompleted = 10;
         int bonus = 700;
-        int myScore = calculateScore(score,levelCompleted,bonus);
-        System.out.println("My score is :- "+myScore);
+        int myScore = calculateScore(score, levelCompleted, bonus);
+        System.out.println("My score is :- " + myScore);
         // Output - My score is :- 9000
 
     }
 
-    public static int calculateScore(int score, int levelCompleted, int bonus){
+    public static int calculateScore(int score, int levelCompleted, int bonus) {
         int totalScore = score + (bonus * levelCompleted);
         return totalScore;
     }

@@ -1,5 +1,5 @@
 public class Challenges {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         /*
         This will contain challenges from various modules. Treat these challenges as exercises to build upon
         your knowledge from the class.
@@ -21,10 +21,10 @@ public class Challenges {
 
         // Start
 
-        double var1 = 20d,var2=80d;
-        double addVar = (var1 + var2)*100d;
-        double rem = addVar%40;
-        boolean bol = ( rem == 0) ? true : false;
+        double var1 = 20d, var2 = 80d;
+        double addVar = (var1 + var2) * 100d;
+        double rem = addVar % 40;
+        boolean bol = (rem == 0) ? true : false;
         System.out.println(bol);
         if (!bol) {
             System.out.println("Got some remainder");

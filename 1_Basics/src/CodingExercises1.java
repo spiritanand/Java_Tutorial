@@ -148,4 +148,10 @@ public class CodingExercises1 {
 //        return -1;
 //    }
 
+
+    // 14. Sum Odd
+
+
+    // 15.
+
 }

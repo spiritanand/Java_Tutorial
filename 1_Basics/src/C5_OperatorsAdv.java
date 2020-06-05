@@ -33,7 +33,8 @@ public class C5_OperatorsAdv {
             System.out.println("myVal is greater or equal to than 30");
 
         // Initializing some values.
-        int myVal2 = 9;int myVal3 = 12;
+        int myVal2 = 9;
+        int myVal3 = 12;
 
         // Now lets take a look at the and '&&' operator.
 
@@ -47,7 +48,7 @@ public class C5_OperatorsAdv {
             // the conditions need to be true for the true code block to be executed. Iff both of the conditions
             // are false only then this block would not be executed.
             System.out.println("myVal is greater than myVal2, but myVal is not myVal3.");// Yet this will be
-            // printed as one of the conditions is true.
+        // printed as one of the conditions is true.
 
         // Now lets take a look at the ternary operator. Here ternary operator refers to the fact that we are
         // dealing with three operands.
@@ -56,13 +57,13 @@ public class C5_OperatorsAdv {
         // If the first operand returns false then the third operand is assigned to the variable.
         // For example :-
 
-        boolean myTer = (myVal == 30)? true : false;
+        boolean myTer = (myVal == 30) ? true : false;
         // Here myTer will be assigned the second operand that is true as the first operand returns true.
-        System.out.println("myTer has been assigned the value :- "+myTer);
+        System.out.println("myTer has been assigned the value :- " + myTer);
 
-        int val = (myVal != 30)? 1 : 0;
+        int val = (myVal != 30) ? 1 : 0;
         // Here val will be assigned the third operand (0) as the first operand returns false.
-        System.out.println("val has been assigned the value :- "+val);
+        System.out.println("val has been assigned the value :- " + val);
 
         // The ternary operator is a shortcut to the if-then-else (will be covered in a future section).
 

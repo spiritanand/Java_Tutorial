@@ -1,5 +1,5 @@
 public class C4_IfThen {
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
         /*
         In this section we will be covering the if-then statement. It is the most basic level of control flow
@@ -14,10 +14,10 @@ public class C4_IfThen {
         // It is different from the '=' symbol which is used for value assignment of a variable.
         if (isBeast == false)
             System.out.println("I am not scared of Beasts.");
-            System.out.println("I am though.");// We do not see any use of the code block.
+        System.out.println("I am though.");// We do not see any use of the code block.
         if (isBeast == true)
             System.out.println("I am not scared of Beasts.");
-            System.out.println("I am though \uD83D\uDE09.");// Until we see this statement printed even though
+        System.out.println("I am though \uD83D\uDE09.");// Until we see this statement printed even though
         // the whole if
         // block should not run as the condition provided is false.
 

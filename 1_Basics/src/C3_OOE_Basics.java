@@ -28,7 +28,7 @@ public class C3_OOE_Basics {
         int myMultiplication = 9 * 30;// The asterisk(*) is used for multiplication. Output -> 270
         System.out.println(myMultiplication);
 
-        int myDivide = 30 /9 ;// The forward slash(/) is used for division. Since we are using an int we get the
+        int myDivide = 30 / 9;// The forward slash(/) is used for division. Since we are using an int we get the
         // result as an integer rather than a floating value. Output -> 3
         System.out.println(myDivide);
 
