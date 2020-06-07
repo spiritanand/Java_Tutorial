@@ -1,6 +1,7 @@
 import java.lang.Math; // Math Class methods helps to perform the numeric operations like square, square root,
-
 // trigonometric operations and here absolute value of an integer.
+
+// The aim of this challenge is to check whether the number entered is palindrome or not.
 public class PalindromeChallenge {
     public static void main(String args[]) {
         System.out.println(isPalindrome(12321));
@@ -21,7 +22,5 @@ public class PalindromeChallenge {
             return true;
         }
         return false;
-
     }
-
 }

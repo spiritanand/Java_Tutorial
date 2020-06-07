@@ -1,8 +1,11 @@
+import java.lang.Math; // Math Class methods helps to perform the numeric operations like square, square root,
+
+// trigonometric operations and here absolute value of an integer.
 public class CodingExercises1 {
     public static void main(String args[]) {
         /*
-        This section will contain a few different coding exercise of the course that I am following. Here we
-        can test our different methods.
+        This section will contain a few different coding exercise of the course that I am following. Here you
+        can test the different methods.
          */
     }
     // This will contain all the methods required for all the coding exercises
@@ -150,4 +153,29 @@ public class CodingExercises1 {
 
 
     // 14. Sum Odd
+
+
+    // 15. GCD - Greatest Common Divisor
+    public static int GCD(int a, int b) {
+        if (b == 0) {
+            return a;
+        } else {
+            int b1 = a % b;
+            return GCD(b, b1);
+        }
+    }
+
+//    // 16. All Factors
+//    // This will print out all the factors of a given number, though not in the right and sorted order. The
+//    // sorting bit I leave it on you guys.
+//    public static void fac(int number) {
+//        int n = (int) Math.sqrt(number);
+//        for (int i = 1; i <= n; i++) {
+//            if (number % i == 0) {
+//                System.out.println(i);
+//                int i1 = number / i;
+//                System.out.println(i1);
+//            }
+//        }
+//    }
 }
