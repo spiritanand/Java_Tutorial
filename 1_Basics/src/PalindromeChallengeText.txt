@@ -1,0 +1,8 @@
+Palindrome number in java: A palindrome number is a number that is same even after reversing it.
+For example 121,3443,12344321,12345321 are palindrome numbers.
+
+Palindrome number algorithm :-
+1--> Holding the number inputted in temporary variable
+2--> Reversing the number
+3--> Compare the temporary number with reversed number
+4--> Print(return) the boolean.
