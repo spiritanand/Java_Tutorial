@@ -1,5 +1,5 @@
 public class DigitSumChallenge {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println(sumDigits(191230)); // Testing for 191230 --> Output :- 16
         System.out.println(sumDigits(-42)); // Testing for -42 --> Output :- -1 (Invalid Value)
         System.out.println(sumLastFirst(6_123452_5)); //         --> Output :- 11 (6+5)

@@ -3,7 +3,7 @@ import java.lang.Math; // Math Class methods helps to perform the numeric operat
 
 // The aim of this challenge is to check whether the number entered is palindrome or not.
 public class PalindromeChallenge {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println(isPalindrome(12321));
     }
 

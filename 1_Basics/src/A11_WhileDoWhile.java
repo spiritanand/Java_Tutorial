@@ -1,4 +1,4 @@
-public class C10_WhileDoWhile {
+public class A11_WhileDoWhile {
     public static void main(String args[]) {
         // Now a for loop is very useful when we want to execute a certain command 'n' number of times, but
         // what if we do not know how many times we have to execute certain commands (till a certain condition

@@ -1,4 +1,4 @@
-public class C6_IfThenElse {
+public class A6_IfThenElse {
     public static void main(String args[]) {
         /*
         If-then-else is a control flow statement. It is an extension of the if-else control flow statement. In

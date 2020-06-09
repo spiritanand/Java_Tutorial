@@ -1,6 +1,6 @@
 import java.lang.Math;
 public class NumToWordsChallenge {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         NTW(120400); // Test case 1
     }
 

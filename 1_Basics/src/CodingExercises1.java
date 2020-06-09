@@ -2,7 +2,7 @@ import java.lang.Math; // Math Class methods helps to perform the numeric operat
 
 // trigonometric operations and here absolute value of an integer.
 public class CodingExercises1 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         /*
         This section will contain a few different coding exercise of the course that I am following. Here you
         can test the different methods.

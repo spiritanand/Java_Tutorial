@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class C12_ReadingInput {
-    public static void main(String args[]) {
+public class A13_ReadingInput {
+    public static void main(String[] args) {
         // Suppose we want to get the user to enter an input say, your name and age. In the previous section we
         // discussed about parsing values from String. Here we will be talking about taking in user input and
         // printing it and performing operations on it.

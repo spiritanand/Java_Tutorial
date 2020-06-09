@@ -1,4 +1,4 @@
-public class C7_MethodOverloading {
+public class A8_MethodOverloading {
     public static void main(String args[]) {
         /*
         Java can distinguish the methods with different method signatures. i.e. the methods can have same name

@@ -1,4 +1,4 @@
-public class C4_IfThen {
+public class A4_IfThen {
     public static void main(String args[]) {
 
         /*

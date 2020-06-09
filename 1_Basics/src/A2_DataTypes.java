@@ -1,4 +1,4 @@
-public class C2_DataTypes {
+public class A2_DataTypes {
     public static void main (String[] args)
     {
         /*

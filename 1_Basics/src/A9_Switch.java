@@ -1,4 +1,4 @@
-public class C8_Switch {
+public class A9_Switch {
     public static void main(String args[]) {
         /*
         In the previous sections we have seen the if-then-else statements. Such statements are known as control

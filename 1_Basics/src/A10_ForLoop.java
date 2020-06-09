@@ -1,4 +1,4 @@
-public class C9_ForLoop {
+public class A10_ForLoop {
     public static void main(String args[]) {
         // Suppose you want to write the code to print numbers from one to hundred or print all the compound
         // interest over a principal and a rate over the time period of 25 years.

@@ -1,4 +1,4 @@
-public class C6_Methods {
+public class A7_Methods {
     public static void main(String args[]) {
         /*
         As we tackle more complex code we will see that we will need the same code in multiple places like in a

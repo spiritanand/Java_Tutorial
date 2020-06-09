@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class MixMaxChallenge {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int sum = 0, min = 0, max = 0;
         int count = 1;

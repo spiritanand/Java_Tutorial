@@ -1,5 +1,5 @@
-public class C11_ParsingValFromStrings {
-    public static void main(String args[]) {
+public class A12_ParsingValFromStrings {
+    public static void main(String[] args) {
         // The question that may rise in your head is that what exactly is parsing. Well, parsing is to read
         // the value of one object and to convert it to another type. Here we will be looking at parsing values
         // from a String.
