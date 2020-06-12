@@ -20,5 +20,24 @@ public class Main {
 
         // Using OOP makes our code more modular. Now we can create as many dogs as we want and all that from a
         // single class.
+
+        // Alright now let us take a look at a new class named Account (for bank account). So jump into Account.
+
+        Account LMAcc = new Account();
+        LMAcc.setName("Lionel Messi");
+        LMAcc.setAccountNumber(2012_91);
+        LMAcc.setBalance(646_000);
+        LMAcc.setPhone(2006091115);
+        LMAcc.setEmail("Goat@Barca.com");
+
+        // Alright now lets now withdraw money from this account
+
+        LMAcc.withdraw(700_000); // He will not be able to withdraw money as he has insufficient funds.
+        LMAcc.withdraw(123_000);
+        LMAcc.deposit(1_000_000);
+
+        // Alright all this works fine. Pretty great right. Well imagine doing this for 30 or s field variables.
+        // That would be too cumbersome and lengthy. We do have a way to enter (to initialize) our parameters
+        // in a different way. That would be using constructors. Lets see this in our class Account.
     }
 }

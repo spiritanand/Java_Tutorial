@@ -19,6 +19,9 @@ public class Dog { // The first letter of any class should start with a capital 
 
     // So these are our 4 field variables.
 
+    // One important thing to note is that (as we have discussed in previous sections) String is a class in
+    // itself and is not a primitive data type. So we can have a class within a class.
+
     // Apart from these field variables when we initialize an object in the Main java automatically creates a
     // few methods like equals and getClass.
 
@@ -34,8 +37,15 @@ public class Dog { // The first letter of any class should start with a capital 
         // our field variable and we are assigning it the value of the parameter.
     }
 
+    // Now the great thing about using setters is that we can add conditions and accept fields only if they
+    // satisfy those conditions. Lets say there are only 2 valid breeds in this world namely, German Shepherd
+    // and Labrador. Other tha those too any other breed will be given the value of Too Exotic
     public void setBreed(String breed) {
-        this.breed = breed;
+        if ((breed.equals("Labrador")) || (breed.equals("German Shepherd"))) {
+            this.breed = breed;
+        } else {
+            this.breed = "Too Exotic";
+        }
     }
 
     public void setFur(boolean fur) {
