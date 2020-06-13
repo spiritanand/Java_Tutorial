@@ -77,15 +77,37 @@ public class Account {
     // Let us create a constructor. Now a constructor is special as it does not have a return type (not even
     // void). The name of our constructor should be same as that of the class.
 
-//    public Account(String name,int accountNumber,double balance,String email,int phone){
-//        System.out.println("Our constructor has been created.");
-//        this.name=name;
-//        this.accountNumber=accountNumber;
-//        this.balance = balance;
-//        this.email = email;
-//        this.phone = phone;
-//    }
-//
-//    // Not only that, but Java also allows us to overload constructors.
+    public Account(String name,int accountNumber,double balance,String email,int phone){ // Main Constructor
+        System.out.println("Our constructor has been created.");
+        this.name=name; // Alternative way --> setName(name); // Now this is a really smart way as this allows
+        // to check for any conditions that we might had put in the set. But the real big disadvantage of using
+        // this is when we will be using inheritance.
+        // So it is best practice to initialize by this method.
+        this.accountNumber=accountNumber;
+        this.balance = balance;
+        this.email = email;
+        this.phone = phone;
+    }
 
+    // Not only that, but Java also allows us to overload constructors. Now why would we want to ever want to
+    // overload constructors. Well the answer lies in setting default values. We can use the keyword "this" in our
+    // other constructor(s) and that would call the Main Constructor to initialize values.
+
+    // Lets see a few examples :-
+
+    public Account(){ // Empty Constructor
+        this("Default",11111111,1_000_000,"default@email.com",123456789);
+        // The above line which contains "this" need to be the first line of our constructor always.
+        System.out.println("Empty constructor called");
+    }
+
+    // But what if we want to set default for only a few values.
+    public Account(String name,int phone){ // Some default values
+        this(name,98712367,1_000,"noemail@no.com",phone);
+        // This is how we set a few default values. Using "this" helps us to keep our code clean and is a really
+        // good practice as this is allows us to use the same code to initialize every time.
+        System.out.println("Acc. no. , balance and email set to default value");
+    }
+
+    // Now we know about constructors lets jump into the Main class and check it out.
 }
