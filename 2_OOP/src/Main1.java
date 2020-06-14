@@ -1,4 +1,4 @@
-public class Main {
+public class Main1 {
     public static void main(String[] args) {
 
         Dog dog1 = new Dog(); // Here we will be initializing our object dog1 of the class Dog.
