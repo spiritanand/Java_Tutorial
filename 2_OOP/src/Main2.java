@@ -25,5 +25,6 @@ public class Main2 {
         myMac.off();
         // Notice the messages that are outputted and their order.
         // We have now seen how inherited classes work.
+        // Now jump back to B2_Inheritance for some more in-depth discussions.
     }
 }
