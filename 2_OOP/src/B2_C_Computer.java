@@ -1,4 +1,4 @@
-public class Computer {
+public class B2_C_Computer {
     // This is our superclass named Computer. A superclass is no different from a normal class. We can now
     // start to make our field variables.
     private String name;
@@ -10,7 +10,7 @@ public class Computer {
 
     // Now let us create our constructor so we can initialize our field variables.
 
-    public Computer(String name, String OS,String model, double weight, int ports, double battery) {
+    public B2_C_Computer(String name, String OS, String model, double weight, int ports, double battery) {
         System.out.println("Computer class constructor called.");
         this.name = name;
         this.OS = OS;
@@ -59,5 +59,5 @@ public class Computer {
         System.out.println("Calculating.");
     }
 
-    // Now let us jump into our Main2 class to have some fun.
+    // Now let us jump into our B2_C_Main class to have some fun.
 }

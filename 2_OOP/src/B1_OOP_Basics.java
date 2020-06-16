@@ -20,7 +20,7 @@ public class B1_OOP_Basics {
         //
         // Right so lets get straight into it. In IntelliJ we can easily create classes by right clicking the
         // src (source) folder. We are going to create the class of a Dog. In the project folder in the 2_OOP
-        // section look fot the Dog.java file (this is our class file).
+        // section look fot the B1_C_Dog.java file (this is our class file).
 
     }
 }

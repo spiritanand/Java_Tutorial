@@ -1,4 +1,4 @@
-public class Dog { // The first letter of any class should start with a capital letter. This statement creates
+public class B1_C_Dog { // The first letter of any class should start with a capital letter. This statement creates
     // a new class of the name Dog.
 
     // public is the access modifier that is used to determine what restrictions do other have on accessing
@@ -75,5 +75,5 @@ public class Dog { // The first letter of any class should start with a capital 
         return this.color;
     }
 
-    // Now lets jump into the Main1 class and have some fun!!!
+    // Now lets jump into the B1_C_Main class and have some fun!!!
 }

@@ -15,7 +15,7 @@ public class B2_Inheritance {
         // Superclass - The class from which inherit.
         // Subclass - The class in which we inherit.
         // Inheritance is an important pillar for OOP and Java. Inheritance allows us the reusability of code.
-        // Now let us jump into our new (super)class Computer.
+        // Now let us jump into our new (super)class B2_C_Computer.
 
 
         // Alright now we have seen inheritance in depth. There must be a few confusions brewing in you right

@@ -1,4 +1,4 @@
-public class Account {
+public class B1_C_Account {
     // Now let us create our important field variables
     private String name;
     private double balance;
@@ -77,7 +77,7 @@ public class Account {
     // Let us create a constructor. Now a constructor is special as it does not have a return type (not even
     // void). The name of our constructor should be same as that of the class.
 
-    public Account(String name, int accountNumber, double balance, String email, int phone) { // Main1 Constructor
+    public B1_C_Account(String name, int accountNumber, double balance, String email, int phone) { // Main1 Constructor
         System.out.println("Our constructor has been created.");
         this.name = name; // Alternative way --> setName(name); // Now this is a really smart way as this allows
         // to check for any conditions that we might had put in the set. But the real big disadvantage of using
@@ -95,19 +95,19 @@ public class Account {
 
     // Lets see a few examples :-
 
-    public Account() { // Empty Constructor
+    public B1_C_Account() { // Empty Constructor
         this("Default", 11111111, 1_000_000, "default@email.com", 123456789);
         // The above line which contains "this" need to be the first line of our constructor always.
         System.out.println("Empty constructor called");
     }
 
     // But what if we want to set default for only a few values.
-    public Account(String name, int phone) { // Some default values
+    public B1_C_Account(String name, int phone) { // Some default values
         this(name, 98712367, 1_000, "noemail@no.com", phone);
         // This is how we set a few default values. Using "this" helps us to keep our code clean and is a really
         // good practice as this is allows us to use the same code to initialize every time.
         System.out.println("Acc. no. , balance and email set to default value");
     }
 
-    // Now we know about constructors lets jump into the Main1 class and check it out.
+    // Now we know about constructors lets jump into the B1_C_Main class and check it out.
 }

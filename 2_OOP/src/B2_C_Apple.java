@@ -1,12 +1,12 @@
-public class Apple extends Computer { // The extends keyword is used to inherit from the superclass.
+public class B2_C_Apple extends B2_C_Computer { // The extends keyword is used to inherit from the superclass.
 
     // Now we can add a few of our own extra special methods that are special only to computers of Apple.
 
     private boolean glowLogo; // For the glowing apple logo.
     private boolean touchbar; // For the touchbar feature of the Apple laptops.
 
-    public Apple(String name, String model, double weight, int ports, double battery, boolean glowLogo,
-                 boolean touchbar) {
+    public B2_C_Apple(String name, String model, double weight, int ports, double battery, boolean glowLogo,
+                      boolean touchbar) {
         super(name, "OSX", model, weight, ports, battery); // The super keyword calls the superclass computer.
         // Here we are calling the superclass' constructor.
         // Now here the OS will always be OSX so we can set that to have a default value of OSX.

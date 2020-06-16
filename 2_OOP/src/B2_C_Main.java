@@ -1,6 +1,6 @@
-public class Main2 {
+public class B2_C_Main {
     public static void main(String[] args){
-        Computer myPC = new Computer("SMPC","Linux","Acer Aspire",2.2, 8, 99);
+        B2_C_Computer myPC = new B2_C_Computer("SMPC","Linux","Acer Aspire",2.2, 8, 99);
         System.out.println("This is "+myPC.getName()+" that runs on "+myPC.getOS()+". " +
                 "It weighs "+myPC.getWeight()+"kg and has "+myPC.getPorts()+" ports.");
         myPC.on();
@@ -13,7 +13,7 @@ public class Main2 {
 
         // Now that we have created our (sub)class Apple lets have some fun with it.
 
-        Apple myMac = new Apple("myMac","Macbook Pro 15",1.5,4,99,
+        B2_C_Apple myMac = new B2_C_Apple("myMac","Macbook Pro 15",1.5,4,99,
                 true,true);
         System.out.println("This is "+myMac.getName()+" that runs on "+myMac.getOS()+". " +
                 "It weighs "+myMac.getWeight()+"kg and has "+myMac.getPorts()+" ports." +
