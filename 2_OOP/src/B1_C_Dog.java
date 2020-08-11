@@ -22,7 +22,7 @@ public class B1_C_Dog { // The first letter of any class should start with a cap
     // One important thing to note is that (as we have discussed in previous sections) String is a class in
     // itself and is not a primitive data type. So we can have a class within a class.
 
-    // Apart from these field variables when we initialize an object in the Main1 java automatically creates a
+    // Apart from these field variables when we initialize an object in the B1_C_Main java automatically creates a
     // few methods like equals and getClass.
 
     // Now as I have stated before the fields cannot be accessed directly by the user. So how exactly does a

@@ -67,7 +67,7 @@ public class B1_C_Account {
         System.out.println("Money added. Total balance = " + this.balance);
     }
 
-    // Now lets jump back into our Main1 class.
+    // Now lets jump back into our B1_C_Main class.
 
 
     // Right by now you have realised that setting parameters is a bit too cumbersome the way we do it. So lets
@@ -77,7 +77,8 @@ public class B1_C_Account {
     // Let us create a constructor. Now a constructor is special as it does not have a return type (not even
     // void). The name of our constructor should be same as that of the class.
 
-    public B1_C_Account(String name, int accountNumber, double balance, String email, int phone) { // Main1 Constructor
+    public B1_C_Account(String name, int accountNumber, double balance, String email, int phone) { // B1_C_Main
+                                                                                                   // Constructor
         System.out.println("Our constructor has been created.");
         this.name = name; // Alternative way --> setName(name); // Now this is a really smart way as this allows
         // to check for any conditions that we might had put in the set. But the real big disadvantage of using
@@ -91,7 +92,7 @@ public class B1_C_Account {
 
     // Not only that, but Java also allows us to overload constructors. Now why would we want to ever want to
     // overload constructors. Well the answer lies in setting default values. We can use the keyword "this" in our
-    // other constructor(s) and that would call the Main1 Constructor to initialize values.
+    // other constructor(s) and that would call the B1_C_Main Constructor to initialize values.
 
     // Lets see a few examples :-
 

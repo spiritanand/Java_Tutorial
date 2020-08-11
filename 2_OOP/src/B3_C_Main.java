@@ -1,4 +1,4 @@
-public class B3_Main {
+public class B3_C_Main {
     public static void main(String[] args) {
         // We will have to first instantiate the dimensions class.
         B3_C_Dimensions dimensions = new B3_C_Dimensions(100, 135, 75);
@@ -11,16 +11,22 @@ public class B3_Main {
         B3_C_Car p911 = new B3_C_Car("Porsche", "911", engine, body);
 
         // Now lets see how can we see the dimensions of the our car p911. Remember the class Car itself has no
-        // getters to directly check the width or breadth of the car.
-        System.out.println("The depth of the car is :- "+p911.getBody().getDimensions().getDepth());
+        // getters to directly check the width or breadth of the car. Here we have hidden the object so that the
+        // calling program cannot directly call the object.
+        System.out.println("The depth of the car is :- "+p911.getCarDepth());
 
-        // What about the method accelerate of the class Engine. Here is how we access that method.
+        // Now as we need to change the color from Blue to Red.
+        p911.carChangeColor("Red");
+
+        // Now lets take a look at how to do a similar thing, but this time we will call the object directly.
+
+        // The method accelerate of the class Engine. Here is how we access that method directly via the object.
         p911.getEngine().accelerate();
 
         // Ok now lets apply the brakes.
         p911.getEngine().brake();
 
         // This is how we use composition. It can be a really useful tool as it makes our code modular and thus,
-        // easier to debug, write and maintain.
+        // easier to write, debug and maintain.
     }
 }

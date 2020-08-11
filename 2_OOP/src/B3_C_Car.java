@@ -28,9 +28,19 @@ public class B3_C_Car {
         return engine;
     }
 
-    public B3_C_Body getBody() {
-        return body;
+//    public B3_C_Body getBody() {
+//        return body;
+//    }
+    // This getter would return the body object so that we can use it to access its methods. But instead of this
+    // approach we will hide the object so that the calling program can not access it directly. We will create
+    // public methods that will use the object's own methods.
+    public void carChangeColor(String newColor) {
+        body.changeColor(newColor);
     }
 
-    // Now lets jump to B3_Main to see how all this works and other details.
+    public double getCarDepth(){
+        return body.getDimensions().getDepth();
+    }
+
+    // Now lets jump to B3_C_Main to see how all this works and other details.
 }

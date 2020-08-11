@@ -44,5 +44,5 @@ public class B2_C_Apple extends B2_C_Computer { // The extends keyword is used t
 
     // This is how we override our inherited methods.
 
-    // Now lets jump into Main2 class.
+    // Now lets jump into B2_C_Main class.
 }
