@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner;// This import statement is used to get the Scanner class which is used for inputs.
 
 public class A13_ReadingInput {
     public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class A13_ReadingInput {
         // For reading input we will use the class Scanner. It is a class that can parse primitive data types
         // and String as well. It uses methods such as parseInt() internally.
 
-        Scanner scanner = new Scanner(System.in); // When prompted choose the java.util option.
+        Scanner scanner = new Scanner(System.in);
         // We are using this built-in class to take in user input. We are using 'new' to use an instance of the
         // Scanner class.
         // The 'new' keyword, classes and instances will be seen in future 'OOP' section.
@@ -19,8 +19,9 @@ public class A13_ReadingInput {
         boolean hasInt = scanner.hasNextInt();// We will be using this to check if the next input will be an int.
         if (hasInt) {
             int age = scanner.nextInt(); // This will read the number.
-            if (age > 0 && age <= 100) { // This will check if the age of the user is in valid range.
-                scanner.nextLine(); // We are using this line so that the enter is registered separately and we
+            if ((age > 0) && age <= 125) { // This will check if the age of the user is in valid range.
+                scanner.nextLine();
+                // We are using this line so that the enter is registered separately and we
                 // do not skip any nextLine() method. We must always enter this to avoid any skipping.
                 // To experience this yourself comment out this statement an then check it will skip the
                 // nextLine() method.

@@ -1,5 +1,5 @@
 public class A8_MethodOverloading {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         /*
         Java can distinguish the methods with different method signatures. i.e. the methods can have same name
         but with different parameters list (i.e. number of the parameters, order of the parameters, and data
@@ -55,7 +55,7 @@ public class A8_MethodOverloading {
         The advantage of method overloading is that we just need to remember the single method name to do
         slightly different stuff based on the type and number of parameter passed.
         Say when you want to sum 3, 5 and 7 numbers. Then for them you could just use the same method name as
-        sum and then pass on different parameters to it. This bring about consistency.
+        sum and then pass on different parameters to it. This brings about consistency.
 
         Another great example in java is the println method which is actually 10 different methods with the name
         and depends on the type(s) of parameter we use.

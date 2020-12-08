@@ -1,5 +1,4 @@
 public class B2_Inheritance {
-    public static void main(String[] args) {
         /*
          For learning object oriented programming we can learn by looking at the real world objects like
          cars, animals, etc. We can think of classes as virtual blueprints and objects as real world objects,
@@ -35,7 +34,6 @@ public class B2_Inheritance {
          them in a concise and tabular form.
          Now you may not have heard of exceptions, we will be covering them in a future section.
         */
-
-
-    }
+	
+	
 }

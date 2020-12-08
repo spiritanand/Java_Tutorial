@@ -41,6 +41,8 @@ public class B3_C_Car {
     public double getCarDepth(){
         return body.getDimensions().getDepth();
     }
+    
+    // You can add in your own methods to complete the list.
 
     // Now lets jump to B3_C_Main to see how all this works and other details.
 }

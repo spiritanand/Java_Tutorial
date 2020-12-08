@@ -1,6 +1,6 @@
 public class FlourPackChallenge {
     public static void main (String[] args){
-        System.out.println(canPack(2,2,11));
+        System.out.println(canPack(1,5,11));
     }
     public static boolean canPack(int big, int small, int goal){
         for (int i=0;i<=big;i++){
