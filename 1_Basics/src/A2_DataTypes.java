@@ -3,9 +3,9 @@ public class A2_DataTypes {
     {
         /*
         Variables are a way to store information. Variables that we define in a program can be accessed by a
-        name we give. The contents of a variable are variable. We need to tell the computer what type of info.
-        we want to store and the name we want to give to it. There are a lot of different data types. Data
-        types are a keyword in Java.
+        name we give. The contents of a variable are 'variable'. We need to tell the computer what type of
+        info. we want to store and the name we want to give to it. There are a lot of different data types.
+        Data types are a keyword in Java.
         */
 
         /*
@@ -28,7 +28,7 @@ public class A2_DataTypes {
         the building blocks of data manipulation.
          */
 
-        // The range of int is not infinite that is it has some defined range. Let us see what is it's range.
+        // The range of int is not infinite, that is it has some defined range. Let us see what is it's range.
         int minValue = Integer.MIN_VALUE;
         int maxValue = Integer.MAX_VALUE;
         // Here Integer is a wrapper class. We use it so that we can perform operations on an int.
@@ -50,14 +50,14 @@ public class A2_DataTypes {
         System.out.println("The overflow value of int in this case is :- "+(maxValue+1));
         // Output = -2147483648
 
-        // Note :- We cannot explicitly initialize the int value to a number larger or smaller tha its max or
+        // Note :- We cannot explicitly initialize the int value to a number larger or smaller than its max or
         // min respectively. This would return as a error.
 
         // Lets take a look at the byte data type
 
         byte minByteValue = Byte.MIN_VALUE;
         byte maxByteValue = Byte.MAX_VALUE;
-        // Here Byte is a wrapper class. We use it so that we can perform operations on an byte.
+        // Here Byte is a wrapper class. We use it so that we can perform operations on a byte.
         System.out.println("The maximum value of byte is :- "+minByteValue);
         // Output = -128
         System.out.println("The maximum value of byte is :- "+maxByteValue);
@@ -67,7 +67,7 @@ public class A2_DataTypes {
         
         short minShortValue = Short.MIN_VALUE;
         short maxShortValue = Short.MAX_VALUE;
-        // Here Short is a wrapper class. We use it so that we can perform operations on an short.
+        // Here Short is a wrapper class. We use it so that we can perform operations on a short.
         System.out.println("The maximum value of short is :- "+minShortValue);
         // Output = -32768
         System.out.println("The maximum value of short is :- "+maxShortValue);
@@ -79,7 +79,9 @@ public class A2_DataTypes {
         TBH we wont be using much of the short and byte data type as modern computers do not have such
         restrictions on memory. They are usually used to increase the performance when the range of the
         integers to be used is known and small enough.
-        In contrast int uses 32 bits of data.
+        byte - 1 byte
+        short - 2 bytes
+        In contrast int uses 4 bytes (32 bits) of data.
         So different data types take different memory space.
          */
         
@@ -106,6 +108,7 @@ public class A2_DataTypes {
         // For example
         // byte myByteHalf = (minByteValue/2);
         // Error:(107, 40) java: incompatible types: possible lossy conversion from int to byte
+        
         // This results in an error as it is expecting a byte but is receiving an int which is set by default.
         byte myByteHalf = (byte) (minByteValue/2);
         // Now we have explicitly stated the cast as byte. Now this code will run smoothly.
@@ -163,7 +166,7 @@ public class A2_DataTypes {
         /*
         Believe it or not the double(64 bits) gets processed faster than the float(32 bits) in most of the
         modern computers. Almost all of the Java math libraries return double as their default value. Hence, it
-         is recommended to use the double data type when dealing with floating numbers.
+        is recommended to use the double data type when dealing with floating/decimal numbers.
          */
 
         /*
@@ -210,7 +213,7 @@ public class A2_DataTypes {
 
         /*
         Now lets discuss about another important data type, String. Now the String is not a primitive data type
-         rather it is a class, but it enjoys a special treatment than other classes.
+        rather it is a class, but it enjoys a special treatment than other classes.
         A String is can contain a sequence of characters. Technically it is limited by the memory or the
         MAX-VALUE of int which is 2.14 billion characters.
          */
@@ -221,7 +224,7 @@ public class A2_DataTypes {
         String myStrNum1 = "4";
         String mySum = myStrNum1 + 2;
         // The output here would be different than what you would think. Here as we are adding an int to a String
-        // the int gets converted to a String and hence the output is not 6 rather 42.
+        // the int gets converted to a String and hence the output is 42 (not 6).
         System.out.println("The (\u2211) sum of the two is :- "+ mySum);
         // Output - The (∑) sum of the two is :- 42
         // In String we can use unicode characters as well, so the String data type is very versatile.

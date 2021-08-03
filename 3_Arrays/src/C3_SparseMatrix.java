@@ -13,7 +13,7 @@ public class C3_SparseMatrix {
 				{2, 0, 0, 9}
 		};
 		
-		// Let's calculate the size of this array.
+		// Let's calculate the size of this 2-D array.
 		double sz = spe_arr.length * spe_arr[0].length;
 		
 		int count = 0; // This variable will store the number of non zero terms in the array.
@@ -21,7 +21,8 @@ public class C3_SparseMatrix {
 		for (int i = 0; i < spe_arr.length; i++) {
 			for (int j = 0; j < spe_arr[i].length; j++) {
 				if (spe_arr[i][j] != 0)
-					count++;
+					count++; // This will count all the non-zero integers in the array.
+				// No shortcut to this. We need to traverse the whole array once.
 			}
 		}
 		
@@ -39,9 +40,9 @@ public class C3_SparseMatrix {
 		 the column is the column number of that element. On the third row the last member of the the column
 		 is the actual value of that non-zero element from the sparse matrix.
 		 
-		 Take some time to visualize this paragraph.
+		 Take some time to "visualize" this paragraph.
 		 
-												Read it TWICE.
+												Read it "TWICE".
 		*/
 		
 		int[][] comp_arr = new int[3][count];

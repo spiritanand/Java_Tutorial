@@ -16,10 +16,8 @@ public class C5_Merge {
 		for (int i = 0; i < arr1.length; i++) {
 			arr3[i] = arr1[i];
 		}
-		// To copy the values of arr2
-		for (int i = 0; i < arr2.length; i++) {
-			arr3[arr1.length + i] = arr2[i];
-		}
+		// To copy the values of arr2 we use the Java defined function.
+		System.arraycopy(arr2, 0, arr3, arr1.length, arr2.length);
 		System.out.println("The merged array is:- " + Arrays.toString(arr3));
 	}
 }

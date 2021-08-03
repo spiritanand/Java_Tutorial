@@ -39,7 +39,7 @@ public class C4_InsDel {
 			arr[i + 1] = arr[i];// We are shifting the whole array to the right by 1 position from the
 			// position where we want to insert the number.
 		}
-		arr[pos - 1] = num;
+		arr[pos - 1] = num; // Re-assigning the position to the number entered by the user.
 		n++;// Increasing the size of the array for our user.
 		System.out.println("\nThe new array is:-");
 		for (int i = 0; i < n; i++) {
@@ -59,7 +59,7 @@ public class C4_InsDel {
 				System.out.println("arr[" + i + "] is " + arr[i]);
 			}
 		} else {
-			int new_arr[] = new int[n - 1];
+			int[] new_arr = new int[n - 1];
 			for (int i = 0, j = 0; i <= new_arr.length; i++) {
 				if (i == pos_del - 1) {
 					continue;// This will skip assigning the value to position the user wants deleted.

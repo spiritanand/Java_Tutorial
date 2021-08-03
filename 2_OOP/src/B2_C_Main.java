@@ -1,6 +1,6 @@
 public class B2_C_Main {
     public static void main(String[] args){
-        B2_C_Computer myPC = new B2_C_Computer("SMPC","Linux","Acer Aspire",2.2, 8, 99);
+        B2_C_Computer myPC = new B2_C_Computer("SM_PC","Linux","Acer Aspire",2.2, 8, 99);
         System.out.println("This is "+myPC.getName()+" that runs on "+myPC.getOS()+". " +
                 "It weighs "+myPC.getWeight()+"kg and has "+myPC.getPorts()+" ports.");
         myPC.on();
@@ -17,7 +17,7 @@ public class B2_C_Main {
                 true,true);
         System.out.println("This is "+myMac.getName()+" that runs on "+myMac.getOS()+". " +
                 "It weighs "+myMac.getWeight()+"kg and has "+myMac.getPorts()+" ports." +
-                "Glowing Apple Logo :- "+myMac.isGlowLogo()+" Touchbar included :- "+myMac.isTouchbar());
+                "\nGlowing Apple Logo :- "+myMac.isGlowLogo()+"\nTouch-bar included :- "+myMac.isTouch_bar());
         // Now lets have some fun with the methods.
         // Lets have a look at our overridden method.
         myMac.on();

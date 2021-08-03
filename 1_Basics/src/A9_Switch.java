@@ -4,6 +4,7 @@ public class A9_Switch {
         In the previous sections we have seen the if-then-else statements. Such statements are known as control
          flow statements for self-explanatory reasons. In this section and the next few sections we will see a
          few more such control flow statements.
+         
          Here we are having a look at the switch statements.
          */
 
@@ -18,8 +19,8 @@ public class A9_Switch {
         }
         // In this case we want a certain bock of code to be executed when a specific condition is fulfilled.
         // Here we are switching from values of 1 to 2 (and it could be extended to greater numbers). But this
-        // could become cumbersome and confusing when we are using it for say 10 or much more cases. So here is
-        // where the switch statement comes in.
+        // could become cumbersome and confusing when we are using it for say 10 (or greater cases). So
+        // here is where the switch statement comes in.
 
         int swVal = 3;
 
@@ -41,7 +42,7 @@ public class A9_Switch {
         // This makes the life of a programmer easy (Give us a BREAK (☞ﾟヮﾟ)☞ !!). Hence, using a switch gives us
         // the power of "multiple executable paths" in the easiest way possible. A switch works with the byte,
         // short, char, string and int primitive data types. So we might as well have used 'A' or 'B' or 'C' in
-        // place of the integers.
+        // place of integers.
         // But one of the advantages of the if-then-else statement is that we can check multiple conditions at
         // a time or even different conditions apart from the value of the variable. So the if-else provides us
         // with more flexibility.

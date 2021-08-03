@@ -18,9 +18,6 @@ public class PalindromeChallenge {
             number /= 10;
         }
         s = s / 10;
-        if (og_num == s) {
-            return true;
-        }
-        return false;
+        return (og_num == s);
     }
 }

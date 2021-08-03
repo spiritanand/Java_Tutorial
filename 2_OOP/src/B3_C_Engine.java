@@ -4,14 +4,14 @@ public class B3_C_Engine {
     private double efficiency;
     private double power;
 
-    // Now lets create the constructor of this class.
+    // Constructor of this class.
     public B3_C_Engine(double thrust, double efficiency, double power){
         this.thrust = thrust;
         this.efficiency = efficiency;
         this.power = power;
     }
 
-    // Now lets create some methods.
+    // Methods.
     public void accelerate() {
         System.out.println("Accelerating.");
     }
@@ -20,7 +20,7 @@ public class B3_C_Engine {
         System.out.println("Applying brakes.");
     }
 
-    // Now lets make the getters.
+    // Getters.
     public double getThrust() {
         return thrust;
     }

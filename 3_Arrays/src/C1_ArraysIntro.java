@@ -26,9 +26,10 @@ public class C1_ArraysIntro {
 		
 		double[] mySecondArray = {1, 2, 3, 4, 5, 6, 7}; // This is another way of initializing an array,
 		// though it is a bit too cumbersome. Also, most of the times we would like for the user to enter a
-		// set of values which we would like to store. So we have another way of doing so. This is the way
-		// to initialize an array inline. The "{" and "}" is know as the array initializer block. This
-		// method of initializing an array is also know as an anonymous array.
+		// set of values which we would like to store. So we have another way of doing so.
+		// This is the way to initialize an array inline. The "{" and "}" is know as the array initializer
+		// block.
+		// This method of initializing an array is also know as an anonymous array.
 		// Let's check it out.
 		
 		// Note :- To store the values by the above method we have to ensure that we initialize the array
@@ -44,16 +45,16 @@ public class C1_ArraysIntro {
 		// Now let's see our array (output).
 		
 		for (int i = 0; i < 10; i++) {
-			System.out.println("Element no. " + i + " is " + myFirstArray[i]);
+			System.out.println("Index no. " + i + " is " + myFirstArray[i]);
 		}
 		
 		System.out.println("\n\n");
 		
-		// For our second array lets take input from the user(you in this case) itself...
 		// Here we will be using a very special property(attribute) of arrays called length. This is a very
-		// convenient way to take input and also output array. This helps us as we no need to remember the
-		// length of the array anymore. Also if the length of the array changes it won't cause any issues in
-		// the code. This makes our code cleaner and also makes it easier to make changes and update the code.
+		// convenient way to take input and also output array. This helps us as there is no need to remember
+		// the length of the array anymore. Also if the length of the array changes it won't cause any
+		// issues in the code.
+		// This makes our code cleaner and also makes it easier to make changes and update the code.
 		
 		int n = mySecondArray.length; // This will store the length of our second array.
 		
@@ -67,6 +68,8 @@ public class C1_ArraysIntro {
 		
 		System.out.println("\n\n");
 		
+		// For our second array lets take input from the user(you in this case) itself.
+		
 		// Now let's see how can we take input from the user into arrays. Also we will have a look at how
 		// methods will be created and used for arrays.
 		
@@ -78,7 +81,7 @@ public class C1_ArraysIntro {
 	}
 	
 	public static int[] getInts(int len) {
-		System.out.println("Enter " + len + " number of elements for the array.:-\r");
+		System.out.println("Enter " + len + " number of elements for the array :-\r");
 		int[] val = new int[len];
 		
 		for (int i = 0; i < val.length; i++) {
@@ -94,7 +97,8 @@ public class C1_ArraysIntro {
 		}
 	}
 	
-	// This is arrays work. In this page we have covered the basics of arrays.
+	// This is how arrays work.
+	// In this page we have covered the basics of arrays.
 	
 	// Now I have a challenge for you:-
 	// Create a program using arrays that sorts a list of integers in descending order.

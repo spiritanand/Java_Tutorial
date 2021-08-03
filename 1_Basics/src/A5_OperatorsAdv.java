@@ -66,6 +66,10 @@ public class A5_OperatorsAdv {
         System.out.println("val has been assigned the value :- " + val);
 
         // The ternary operator is a shortcut to the if-then-else (will be covered in a future section).
+    
+        String myVal_value = (myVal != 30) ? "Not equal to 30." : "Number is 30.";
+        // Here val will be assigned the third operand as the first operand returns false.
+        System.out.println(myVal_value);
 
         // Take a look at the Java Operator Precedence Table that I have added in the repo. A higher precedence
         // means it will be executed before.

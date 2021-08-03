@@ -3,10 +3,10 @@ public class A8_MethodOverloading {
         /*
         Java can distinguish the methods with different method signatures. i.e. the methods can have same name
         but with different parameters list (i.e. number of the parameters, order of the parameters, and data
-        types of the parameters). This is very commonly used all around in Java programming.
+        types of the parameters). This is very commonly used in Java programming.
 
         Q> Why do we need overloading ?
-        Answer --> If we need to do same kind of the operation with different ways i.e. for different inputs.
+        Answer --> If we need to do same kind of operation in different ways i.e. for different inputs.
          In the example described below, we are doing length conversion for different inputs (though this
          example is not that realistic.)
          It is hard to find many different meaningful names for single action.
@@ -26,7 +26,8 @@ public class A8_MethodOverloading {
         NOTE :- Method overloading cannot be done by changing the return type. The method signature needs to be
          changed for this to work.
          */
-        calcFeetAndInchesToCm(100);
+        calcFeetAndInchesToCm(100); // 1 parameter is take as inches.
+        calcFeetAndInchesToCm(6,1); // 2 parameters takes feet and inches.
     }
 
     public static double calcFeetAndInchesToCm(double feet, double inches) {
@@ -43,7 +44,7 @@ public class A8_MethodOverloading {
     public static double calcFeetAndInchesToCm(double inches) {
         if (inches >= 0) {
             double feet = (int) inches / 12;
-            double rem_inches = (int) inches % 12;
+            double rem_inches = inches % 12;
             System.out.println(inches + " Inches is equal to " + feet + " feet and " + rem_inches + " inches");
             return calcFeetAndInchesToCm(feet, rem_inches);
 
@@ -57,8 +58,8 @@ public class A8_MethodOverloading {
         Say when you want to sum 3, 5 and 7 numbers. Then for them you could just use the same method name as
         sum and then pass on different parameters to it. This brings about consistency.
 
-        Another great example in java is the println method which is actually 10 different methods with the name
-        and depends on the type(s) of parameter we use.
+        Another great example in Java is the println method which is actually 10 different methods with the
+         name and depends on the type(s) of parameter we use.
          */
     }
 }

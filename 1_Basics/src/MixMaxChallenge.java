@@ -6,9 +6,8 @@ public class MixMaxChallenge {
         int sum = 0, min = 0, max = 0;
         int count = 1;
         while (true) {
-            System.out.println("Enter the #" + count + " number :");
-            boolean hasInt = scanner.hasNextInt();
-            if (hasInt) {
+            System.out.println("Enter the #" + count + " :");
+            if (scanner.hasNextInt()) {
                 int num = scanner.nextInt();
                 if (count == 1) {
                     min = num;

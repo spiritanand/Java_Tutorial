@@ -19,15 +19,14 @@ public class A11_WhileDoWhile {
         }
         // Both of them have the same outputs.
         // Now the do-while loop is a bit different, the do-while loop is guaranteed to run at least once. So
-        // the condition must be set with caution. Although the do-while loop also performs a similar task.
+        // the condition must be set with caution. Though the do-while loop also performs a similar task.
         i = 0;
-        System.out.println("Let us have a look at the do-while loop.");
         do {
-            System.out.println("do-while-->" + i);
+            System.out.println("\n\ndo-while-->" + i);
             i++;
         } while (i <= 5);
-        // NOTE : Observe that we have added a semi-colon at the end of the do-while loop.
-        // As the condition of the do-while loop is checked at the end it is also known as exit-controlled loop.
-        // Similarly the simple while loop is known as entry-controlled loop.
+        // NOTE : We have added a semi-colon at the end of the do-while loop.
+        // As the condition of the "do-while loop" is checked at the end it is also known as "exit-controlled loop".
+        // Similarly the simple "while loop" is known as "entry-controlled loop".
     }
 }

@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 public class ArrayChallenge1 {
-	private static final Scanner scanner = new Scanner(System.in);
+	private static final Scanner sc = new Scanner(System.in);
 	
 	public static void main(String[] args) {
 		System.out.println("Enter the length of your array:-\r");
-		int length = scanner.nextInt();
+		int length = sc.nextInt();
 		
 		int[] chArray = getIntegers(length);
 		System.out.println("\nThe array entered is:-");
@@ -22,14 +22,14 @@ public class ArrayChallenge1 {
 		int[] values = new int[len];
 		System.out.println("Enter the elements of your array:-\r");
 		for (int i = 0; i < values.length; i++) {
-			values[i] = scanner.nextInt();
+			values[i] = sc.nextInt();
 		}
 		return values;
 	}
 	
 	public static void printArray(int[] arr) {
 		for (int i = 0; i < arr.length; i++) {
-			System.out.println("Element " + i + " is " + arr[i]);
+			System.out.println("Index " + i + " is " + arr[i]);
 		}
 	}
 	

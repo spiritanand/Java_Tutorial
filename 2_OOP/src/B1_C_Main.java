@@ -12,14 +12,14 @@ public class B1_C_Main {
         // Right, now that we have set the field variables it is time to know whats its value is. We will call
         // the getters now.
 
-        // Note :- The getter for the boolean type is a bit different by convention. Of course, you could name
-        // this method whatever you like, utilize the POWER OF OOP (POOOP).
+        // Note :- The getter for the boolean type is a bit differently named by convention. Of course, you
+        // could name this method whatever you like, utilize the POWER of OOP (POOP ~ 😂).
 
         System.out.println("The breed of " + b1CDog1.getName() + " is :- " + b1CDog1.getBreed() + ". " +
                 "His colour is " + b1CDog1.getColor() + ". Fur on the dog = " + b1CDog1.isFur());
 
-        // Using OOP makes our code more modular. Now we can create as many dogs as we want and all that from a
-        // single class.
+        // Using OOP makes our code is now more modular. Now we can create as many dogs as we want and all
+        // that from a single class.
 
         // Alright now let us take a look at a new class named Account (for bank account). So jump into Account.
 
@@ -39,15 +39,17 @@ public class B1_C_Main {
         LMAcc.withdraw(123_000);
         LMAcc.deposit(1_000_000);
 
-        // Alright all this works fine. Pretty great right. Well imagine doing this for 30 or s field variables.
-        // That would be too cumbersome and lengthy. We do have a way to enter (to initialize) our parameters
-        // in a different way. That would be using constructors. Lets see this in our class Account.
+        // Alright all this works fine. Pretty great right. Well imagine doing this for 30 or so field
+        // variables.
+        // That would be too cumbersome and lengthy. We do have a better way to enter (to initialize) our
+        // parameters in a different way. That would be using constructors. Lets see this in our class
+        // Account.
 
         // Alright now that we have seen about constructors let us see the results.
 
         B1_C_Account def = new B1_C_Account(); // Using the default constructor.
         System.out.println("This is " + def.getName() + " has acc. no. " + def.getAccountNumber() +
-                " has phone number as " + def.getPhone() + " and has balance equals to " + def.getBalance());
+                " has phone number as " + def.getPhone() + " and has balance equal to " + def.getBalance());
         // Pay close attention to the output messages when we are using the constructors and try to find the
         // reason behind the order of the messages.
 

@@ -6,7 +6,7 @@ public class B1_C_Account {
 	private String email;
 	private int phone;
 	
-	// Now is the time to create our setters and getters.
+	// Create setters and getters.
 	
 	public String getName() {
 		return name;
@@ -52,7 +52,8 @@ public class B1_C_Account {
 	// Now is the time to create a few methods for our class. Lets create two basic methods that are withdrawal
 	// and for depositing of money. Of course for withdrawal we need to check if there are sufficient funds.
 	
-	// One important thing to note is that our method will not be a static one.
+	// One important thing to note is that our method will not be a static one in this case. It is so
+	// because each object should have its separate method. They are not sharing the methods during run-time.
 	public void withdraw(double money_out) {
 		if (money_out > this.balance) {
 			System.out.println("Insufficient funds. Total balance = " + this.balance);
@@ -77,13 +78,15 @@ public class B1_C_Account {
 	// Let us create a constructor. Now a constructor is special as it does not have a return type (not even
 	// void). The name of our constructor should be same as that of the class.
 	
-	public B1_C_Account(String name, int accountNumber, double balance, String email, int phone) { // B1_C_Main
+	public B1_C_Account(String name, int accountNumber, double balance, String email, int phone) {
 		// Constructor
 		System.out.println("Our constructor has been created.");
 		this.name = name; // Alternative way --> setName(name); // Now this is a really smart way as this allows
-		// to check for any conditions that we might had put in the set. But the real big disadvantage of using
+		// to check for any conditions that we might had put. But the real big disadvantage of using
 		// this is when we will be using inheritance.
+		
 		// So it is best practice to initialize by this method.
+		
 		this.accountNumber = accountNumber;
 		this.balance = balance;
 		this.email = email;
@@ -92,13 +95,13 @@ public class B1_C_Account {
 	
 	// Not only that, but Java also allows us to overload constructors. Now why would we want to ever want to
 	// overload constructors. Well the answer lies in setting default values. We can use the keyword "this" in our
-	// other constructor(s) and that would call the B1_C_Main Constructor to initialize values.
+	// other constructor(s) and that would call the B1_C_Account Constructor to initialize values.
 	
 	// Lets see a few examples :-
 	
 	public B1_C_Account() { // Empty Constructor
 		this("Default", 11111111, 1_000_000, "default@email.com", 123456789);
-		// The above line which contains "this" need to be the first line of our constructor always.
+		// The above line which contains "this" need to be the first line of our constructor "ALWAYS".
 		System.out.println("Empty constructor called");
 	}
 	
@@ -106,7 +109,7 @@ public class B1_C_Account {
 	public B1_C_Account(String name, int phone) { // Some default values
 		this(name, 98712367, 1_000, "noemail@no.com", phone);
 		// This is how we set a few default values. Using "this" helps us to keep our code clean and is a really
-		// good practice as this is allows us to use the same code to initialize every time.
+		// best practice as this is allows us to use the same code to initialize every time.
 		System.out.println("Acc. no. , balance and email set to default value");
 	}
 	

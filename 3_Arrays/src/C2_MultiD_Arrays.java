@@ -4,12 +4,12 @@ public class C2_MultiD_Arrays {
 	/* The arrays we have seen till now have been 1-dimensional or linear arrays(LA). Here data is only
 	stored in a linear format i.e., there are multiple values in a single row/column.
 	In this section we will be looking at multi-dimensional arrays. In a multi-dimensional array the
-	possibilities are infinite. We can multiple rows and columns of data.
+	possibilities are infinite. We can have multiple rows and columns of data.
 	 */
 	
 	public static void main(String[] args) {
 		// Syntax of a multi-dimensional array is :-
-		// data_type[1st dimension][2nd dimension][]..[Nth dimension] array_name =
+		// data_type[1st dimension][2nd dimension]...[Nth dimension] array_name =
 		// 															new data_type[size1][size2]….[sizeN];
 		
 		// Examples:-
@@ -30,7 +30,7 @@ public class C2_MultiD_Arrays {
 //				{valueR1C1, valueR1C2, ....},
 //				{valueR2C1, valueR2C2, ....}
 //                           		};
-//		R= row ;
+//		R= row and,
 //		C= column.
 //
 //		For example: int[][] arr_ex = {
@@ -79,16 +79,17 @@ public class C2_MultiD_Arrays {
 //		data_type[][][] array_name = {
 //				{
 //						{valueA1R1C1, valueA1R1C2, ....},
-//		{valueA1R2C1, valueA1R2C2, ....}
+//						{valueA1R2C1, valueA1R2C2, ....}
 //                              },
 //		{
-//			{valueA2R1C1, valueA2R1C2, ....},
-//			{valueA2R2C1, valueA2R2C2, ....}
+//						{valueA2R1C1, valueA2R1C2, ....},
+//						{valueA2R2C1, valueA2R2C2, ....}
 //		}
 //                             };
 //		A= array;
 //		R= row ;
 //		C= column.
+
 //		For example:
 		int[][][] arr3 = {
 				{ // This is the first array.

@@ -1,10 +1,10 @@
 /*
 To save time I will create one superclass and other subclasses (that inherit from the main superclass) right
-here in this same file. Usually it is done in separate files.
+here in this same file.
+Usually it is done in separate files as it becomes easier to maintain.
  */
 
 // The superclass.
-
 class Footballer {
     private final String name;
 
@@ -17,11 +17,11 @@ class Footballer {
     }
 
     public String specialMove() {
-        return "The footballers special move done.";
+        return "Footballer's special move performed.";
     }
 }
 
-// The subclasses.
+// The subclasses:-
 
 class Leo extends Footballer {
     public Leo() {
@@ -41,7 +41,7 @@ class CR7 extends Footballer {
 
     @Override
     public String specialMove() {
-        return "Jumped 20 feet in the air.";
+        return "Jumped 7 feet in the air.";
     }
 }
 
@@ -104,7 +104,7 @@ public class B4_C_Main {
     // Keep in mind that this method will be returning a class of type "Footballer".
 
     public static Footballer randPlayer() {
-        // Here we will return a pseudorandom "int" greater than or equal to 1 and less than 6.
+        // Here we will return a random "int" greater than or equal to 1 and less than equal to 7.
         int randNum = (int) (Math.random() * 7) + 1;
         System.out.println("The random number generated is :- " + randNum);
         switch (randNum) {
@@ -135,7 +135,7 @@ public class B4_C_Main {
 
         for (int i = 1; i < 11; i++) {
             System.out.println("Player #" + i);
-            Footballer player = randPlayer();
+            Footballer player = randPlayer(); // This is known as Dynamic Dispatch method.
             // We are ensuring that instance returned is never null.
             assert player != null;
             System.out.println("Player name :- " + player.getName() + "\nSpecial move :- "
@@ -145,12 +145,13 @@ public class B4_C_Main {
          The player.specialMove() is what shows the concept of polymorphism the best. Here we get a
          unique/different output(function) for every different object of the superclass. Here java checks if
          the object returned has any method as specialMove() which is then executed from the sub-class if it
-         exists it will execute else it will execute this method from the superclass. Here our function was very
-         simple, we could build methods with more complex functionality to utilize the full power of polymorphism.
+         exists it will execute it, else it will execute the method from the superclass. Here our function
+          was very simple, we could build methods with more complex functionality to utilize the full power
+           of polymorphism.
         */
     }
 /*
-This thus concludes our module 2 of our journey to become a better java programmer.
+This thus concludes our module 2 of our journey to become a better Java programmer.
 
 Now you can try to build your own project using the concepts that you learnt in this section and the previous one.
 Building a project or two from scratch will help you understand the concepts on a deeper level and get a better

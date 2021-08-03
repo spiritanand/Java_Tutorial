@@ -2,15 +2,14 @@ public class A7_Methods {
     public static void main(String[] args) {
         /*
         As we tackle more complex code we will see that we will need the same code in multiple places like in a
-         game where the calculation of score and other such parts need to be modular. This increases the
-         readability and makes it easier to debug the program. Not only this, but if a change is needed then a
-         small change in the method itself would bring changes to all the results. All of this makes the code
-         really reusable.
+         game, where the code need to be modular. This increases the readability and makes it easier to
+         debug the program. Not only this, but if a change is needed then a change in the method
+         itself would bring changes to all the results. All of this makes the code really "reusable".
 
         We can pass data, known as parameters, into a method. The parameters need to be specified with their
          correct data types.
 
-        Methods are also known as functions.
+        Methods are also known as "functions".
 
         Warning - If you ever have to copy and paste large chunks of code in your code then you are doing
         something wrong.
@@ -38,6 +37,8 @@ public class A7_Methods {
          I am in myMethod!
 
          */
+        
+        // We can accept the input from the user and then calculate the total.
         int score = 2000;
         int levelCompleted = 10;
         int bonus = 700;
@@ -46,7 +47,8 @@ public class A7_Methods {
         // Output - My score is :- 9000
 
     }
-
+    
+    // Function to calculate the score given a specific formula.
     public static int calculateScore(int score, int levelCompleted, int bonus) {
         int totalScore = score + (bonus * levelCompleted);
         return totalScore;

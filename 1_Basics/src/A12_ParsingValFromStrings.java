@@ -11,7 +11,7 @@ public class A12_ParsingValFromStrings {
         int num = Integer.parseInt(numStr); // Here we are using a class called Integer. This is a wrapper
         // class (will be covered in a future section) for the primitive data type int. It has a few useful
         // static methods such as the parseInt method. Now parseInt tries to convert the String to an integer.
-        // I say try because only iff the string is all numbers will it be converted. If the string is not
+        // I say try because iff the string is all numbers it be converted. If the string is not
         // numbers, but includes any other character then it will throw an exception (an error).
         // You can try this yourself.
         System.out.println("This is a String " + numStr);
@@ -23,7 +23,7 @@ public class A12_ParsingValFromStrings {
         System.out.println("The result of this will be concatenating the two String not increasing " +
                 "the value of the number. Output is " + numStr);
         num += 12;
-        System.out.println("The result will be addition of 12 (years hopefully post the Corona virus) and we " +
+        System.out.println("The result will be addition of 12 and we " +
                 "get the output = " + num);
     }
 }

@@ -28,10 +28,11 @@ public class A10_ForLoop {
 
         double p = 10_000; // Principal
         double r = 5; // Rate
+        // We are using for loop instead of the formula for SI just to showcase how a for-loop works.
         for (int i = 1; i < 11; i++) {
             double interest = p * r / 100;
             p += interest;
-            System.out.println("The principal after " + i + " years is " + p + " and the interest was " + interest);
+            System.out.println("The principal after " + i + " years is " + p + " and the interest is " + interest);
         }
         // This is how the for loop works. Experiment yourself to see the power of loops.
     }

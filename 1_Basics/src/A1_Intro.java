@@ -16,7 +16,8 @@ public class A1_Intro {
         follow or for testing(will be covered in a future section) and any code in a comment till the end of
         the line is ignored by the computer.
         To add a comment we can use two backslashes '/'+'/'. Any code after these two back slashes will be
-        ignored till the end of the line. Another way to make multi line comments is '/'+'*'  ""CODE""  '*'+'/'.
+        ignored till the end of the line. Another way is to make multi line comments '/'+'*'  ""CODE""
+        '*'+'/'.
          */
 
         /* {
@@ -52,7 +53,8 @@ public class A1_Intro {
         System.out.println("This is a perfectly valid statement. The output of int2 is :- " + int2);
 
         // It is a good practice to separate out the operator and the operands and the variable with whitespaces.
-        // TBH it would not affect Java much but it would certainly increase the readability of your code.
+        // TBH it would not affect Java code itself but it would certainly increase the readability of our
+        // code.
 
         // Another good practice is to indent your code to make it more readable. Making your code more
         // readable increases your productivity as it makes it easier for you and your teammates to detect and
