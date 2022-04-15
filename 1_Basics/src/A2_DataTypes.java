@@ -9,7 +9,7 @@ public class A2_DataTypes {
         */
 
         /*
-        Lets start out by defining the variable of type int - int is the abbreviation of integer, a number
+        Let us start out by defining the variable of type int - int is the abbreviation of integer, a number
         without decimal points.
         To define a variable we need to specify the data type, then give the variable a name and optionally add
         an expression to initialize the variable with a value.
@@ -76,7 +76,7 @@ public class A2_DataTypes {
         // The short data type takes up only 16 bits of storage, but has a small range.
 
         /*
-        TBH we wont be using much of the short and byte data type as modern computers do not have such
+        TBH we won't be using much of the short and byte data type as modern computers do not have such
         restrictions on memory. They are usually used to increase the performance when the range of the
         integers to be used is known and small enough.
         byte - 1 byte

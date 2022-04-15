@@ -18,6 +18,9 @@ interface Speed{
 abstract class Human implements Speed, Runner {
 	abstract void eat();
 	abstract void sleep();
+	private void dance(){
+		System.out.println("Show 'em the moves.");
+	}
 }
 
 // Classes assign "package-private" as default access modifier. This is weaker access than public.
@@ -65,6 +68,11 @@ class Robot extends Human{
 		System.out.println("Sleep Robot.");
 	}
 	
+	// A private method can be given higher privileges in the sense of access modifier.
+	public void dance(){
+		System.out.println("Dancing ROBOT.");
+	}
+	
 	void shoot(){
 		System.out.println("Shot laser beams.");
 	}
@@ -75,7 +83,7 @@ public class B5_Interface_Abstract {
 		Runner robot1 = new Robot(12);
 		robot1.start();
 		robot1.stop();
-//		robot1.eat(); // Cannot be done.
+//		ro.bot1.eat(); // Cannot be done.
 //		robot1.shoot(); // Cannot be done.
 		Robot robot2 = new Robot(30);
 		robot2.eat();
@@ -83,5 +91,8 @@ public class B5_Interface_Abstract {
 		robot2.incSpeed();
 		robot2.shoot();
 		System.out.println("The \"speed\" is :- "+robot2.getSpeed());
+		robot2.dance();
+//		Human robot3 = new Robot(50);
+//		robot3.dance();
 	}
 }

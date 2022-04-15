@@ -1,5 +1,5 @@
 public class A3_OOE_Basics {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         /*
         This section will give you an explanation of what are operators, operands and expressions.
 

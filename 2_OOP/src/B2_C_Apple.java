@@ -2,14 +2,14 @@ public class B2_C_Apple extends B2_C_Computer { // The extends keyword is used t
 
     // Now we can add a few of our own extra special methods that are special only to computers of Apple.
 
-    private boolean glowLogo; // For the glowing apple logo.
-    private boolean touch_bar; // For the touch-bar feature of the Apple laptops.
+    private boolean glowLogo; // For the glowing Apple logo.
+    private boolean touch_bar; // For the touch-bar feature of the Apple Mac laptops.
 
     public B2_C_Apple(String name, String model, double weight, int ports, double battery, boolean glowLogo,
                       boolean touch_bar) {
         super(name, "OSX", model, weight, ports, battery); // The super keyword calls the superclass computer.
         // Here we are calling the 'super-class' constructor.
-        // Now here the OS will always be OSX so we can set that to have a default value of OSX.
+        // Now here the OS will always be OSX, so we can set that to have a default value of OSX.
         // Now we can initialize the other unique states of the Apple subclass.
         this.glowLogo = glowLogo;
         this.touch_bar = touch_bar;

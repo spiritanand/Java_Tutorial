@@ -23,7 +23,7 @@ public class B3_C_Main {
         // The method accelerate of the class Engine. Here is how we access that method directly via the object.
         p911.getEngine().accelerate();
 
-        // Ok now lets apply the brakes.
+        // Ok now let's apply the brakes.
         p911.getEngine().brake();
 
         // This is how we use composition. It can be a really useful tool as it makes our code modular and thus,

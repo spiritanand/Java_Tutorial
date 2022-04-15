@@ -7,7 +7,7 @@ public class B2_C_Main {
         myPC.calculate();
         myPC.off();
 
-        // Alright now that we have seen the seen the pretty old class in action now let us see how inheritance
+        // Alright now that we have seen the pretty old class in action now let us see how inheritance
         // works. Jump into the Apple class.
 
 
@@ -18,8 +18,8 @@ public class B2_C_Main {
         System.out.println("This is "+myMac.getName()+" that runs on "+myMac.getOS()+". " +
                 "It weighs "+myMac.getWeight()+"kg and has "+myMac.getPorts()+" ports." +
                 "\nGlowing Apple Logo :- "+myMac.isGlowLogo()+"\nTouch-bar included :- "+myMac.isTouch_bar());
-        // Now lets have some fun with the methods.
-        // Lets have a look at our overridden method.
+        // Now let's have some fun with the methods.
+        // Let's have a look at our overridden method.
         myMac.on();
         myMac.calculate(); // Our inherited method from the Computer superclass.
         myMac.off();

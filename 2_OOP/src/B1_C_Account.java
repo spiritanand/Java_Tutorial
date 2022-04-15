@@ -49,10 +49,10 @@ public class B1_C_Account {
 	}
 	
 	
-	// Now is the time to create a few methods for our class. Lets create two basic methods that are withdrawal
+	// Now is the time to create a few methods for our class. Let's create two basic methods that are withdrawal
 	// and for depositing of money. Of course for withdrawal we need to check if there are sufficient funds.
 	
-	// One important thing to note is that our method will not be a static one in this case. It is so
+	// One important thing to note is that our method will not be a static in this case. It is so
 	// because each object should have its separate method. They are not sharing the methods during run-time.
 	public void withdraw(double money_out) {
 		if (money_out > this.balance) {
@@ -80,12 +80,12 @@ public class B1_C_Account {
 	
 	public B1_C_Account(String name, int accountNumber, double balance, String email, int phone) {
 		// Constructor
-		System.out.println("Our constructor has been created.");
+		System.out.println("Our main constructor has been created.");
 		this.name = name; // Alternative way --> setName(name); // Now this is a really smart way as this allows
-		// to check for any conditions that we might had put. But the real big disadvantage of using
+		// to check for any conditions that we might have put. But the real big disadvantage of using
 		// this is when we will be using inheritance.
 		
-		// So it is best practice to initialize by this method.
+		// So it is best practice initializing by this method.
 		
 		this.accountNumber = accountNumber;
 		this.balance = balance;

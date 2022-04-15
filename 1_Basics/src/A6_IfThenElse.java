@@ -9,7 +9,8 @@ public class A6_IfThenElse {
         int marks = 757;
         if (marks > 770) {
             System.out.println("Congratulations you have passed the first round.");
-            System.out.println("This is the second line. It is getting executed thanks only to the code block.");
+            System.out.println("This is the second line. It is getting executed thanks only to this code " +
+                    "block.");
         } else {
             System.out.println("Hard Luck! Try again next time");// Outputted
             System.out.println("This is the next line. It is getting executed thanks only to the code block.");

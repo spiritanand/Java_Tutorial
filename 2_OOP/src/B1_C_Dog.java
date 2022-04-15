@@ -11,7 +11,7 @@ public class B1_C_Dog { // The first letter of any class should start with a cap
     // these variables. They are hidden from the user. This is called encapsulation. The internal representation
     // of an object is going to be hidden from external view.
     
-    // Now lets create a few (private) field variables.
+    // Now let's create a few (private) field variables.
 
     private String name;
     private String breed;
@@ -35,13 +35,13 @@ public class B1_C_Dog { // The first letter of any class should start with a cap
 
     public void setName(String name) {
         this.name = name; // Now since our parameter name is same as the field variable name we need a way of
-        // differentiating between the two. So for this purpose we use the this keyword. this.name refers to
-        // our field variable and we are assigning it the value of the parameter.
+        // differentiating between the two. So for this purpose we use 'this' keyword. this.name refers to
+        // our field variable, and we are assigning it the value of the parameter.
     }
 
     // Now the great thing about using setter(s) is that we can add conditions and accept fields only if they
-    // satisfy those conditions. Lets say there are only 2 valid breeds in this world namely, "German Shepherd"
-    // and Labrador. Other than those too any other breed will be given the value of "Too Exotic".
+    // satisfy those conditions. Let's say there are only 2 valid breeds in this world namely, "German Shepherd"
+    // and Labrador. Other than those two any other breed will be given the value of "Too Exotic".
     public void setBreed(String breed) {
         if ((breed.equals("Labrador")) || (breed.equals("German Shepherd"))) {
             this.breed = breed;

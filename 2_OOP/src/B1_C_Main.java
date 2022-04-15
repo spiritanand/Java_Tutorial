@@ -9,7 +9,7 @@ public class B1_C_Main {
         b1CDog1.setFur(true);
         b1CDog1.setColor("Brown");
 
-        // Right, now that we have set the field variables it is time to know whats its value is. We will call
+        // Right, now that we have set the field variables it is time to know what's its value is. We will call
         // the getters now.
 
         // Note :- The getter for the boolean type is a bit differently named by convention. Of course, you
@@ -33,7 +33,7 @@ public class B1_C_Main {
         System.out.println("The G.O.A.T. " + LMAcc.getName() + ", acc. no. as " + LMAcc.getEmail() +
                 " and phone number is " + LMAcc.getPhone() + " has the balance = " + LMAcc.getBalance());
 
-        // Alright now lets now withdraw money from this account
+        // Alright now let's withdraw money from this account
 
         LMAcc.withdraw(700_000); // He will not be able to withdraw money as he has insufficient funds.
         LMAcc.withdraw(123_000);
@@ -42,7 +42,7 @@ public class B1_C_Main {
         // Alright all this works fine. Pretty great right. Well imagine doing this for 30 or so field
         // variables.
         // That would be too cumbersome and lengthy. We do have a better way to enter (to initialize) our
-        // parameters in a different way. That would be using constructors. Lets see this in our class
+        // parameters in a different way. That would be using constructors. Let's see this in our class
         // Account.
 
         // Alright now that we have seen about constructors let us see the results.
@@ -57,6 +57,6 @@ public class B1_C_Main {
                 42);
         System.out.println("This is " + sm.getName() + " has acc. no. " + sm.getAccountNumber() +
                 " has phone number as " + sm.getPhone() + " and has balance equals to " + sm.getBalance());
-        // Again pay close attention to the out put messages that we have put in our constructors.
+        // Again pay close attention to the output messages that we have put in our constructors.
     }
 }

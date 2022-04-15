@@ -4,13 +4,14 @@ public class B4_Polymorphism {
 
     There are two types of polymorphism in Java:
 
-    i)  compile-time polymorphism :-
+    i)  compile-time/ static/ early binding polymorphism :-
             If you "overload" a static method in Java, it is the example of compile-time polymorphism.
 
-    ii) run-time polymorphism :-
+    ii) run-time/ dynamic/ late binding polymorphism :-
             Here, we will focus on runtime polymorphism in java. It occurs when we have many classes that  are
             "related to each other by inheritance".
 
-    To get a better idea about polymorphism lets see an example. Jump to B4_C_Main for tuning into all the action.
+    To get a better idea about polymorphism lets see an example. Jump to B4_C_Main to tune into all the
+    action.
      */
 }

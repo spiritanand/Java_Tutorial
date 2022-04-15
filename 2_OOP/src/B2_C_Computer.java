@@ -8,10 +8,10 @@ public class B2_C_Computer {
     private int ports;
     private double battery;
 
-    // Now let us create our constructor so we can initialize our field variables.
+    // Now let us create our constructor, so we can initialize our field variables.
 
     public B2_C_Computer(String name, String OS, String model, double weight, int ports, double battery) {
-        System.out.println("Computer class constructor called.");
+        System.out.println("Computer (super)class constructor called.");
         this.name = name;
         this.OS = OS;
         this.model = model;

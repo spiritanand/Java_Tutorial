@@ -7,11 +7,11 @@ public class A7_Methods {
          itself would bring changes to all the results. All of this makes the code really "reusable".
 
         We can pass data, known as parameters, into a method. The parameters need to be specified with their
-         correct data types.
+        correct data types.
 
         Methods are also known as "functions".
 
-        Warning - If you ever have to copy and paste large chunks of code in your code then you are doing
+        Note - If you ever have to copy and paste large chunks of code in your code then you are doing
         something wrong.
 
         Syntax :-

@@ -30,7 +30,7 @@ class Leo extends Footballer {
 
     @Override
     public String specialMove() {
-        return "Dribbled past opponents.";
+        return "Dribbled past opponents and curled it past the goalkeeper to find the net.";
     }
 }
 
@@ -52,7 +52,7 @@ class Ney extends Footballer {
 
     @Override
     public String specialMove() {
-        return "Dumbfounded the opponents with a rainbow flick.";
+        return "Dumbfounded the opponents with a rainbow flick and crossed the ball to Striker.";
     }
 }
 
@@ -63,7 +63,7 @@ class Mbappe extends Footballer {
 
     @Override
     public String specialMove() {
-        return "Ran past all opponents at light speed";
+        return "Ran past all opponents at 2X light speed";
     }
 }
 
@@ -135,7 +135,7 @@ public class B4_C_Main {
 
         for (int i = 1; i < 11; i++) {
             System.out.println("Player #" + i);
-            Footballer player = randPlayer(); // This is known as Dynamic Dispatch method.
+            Footballer player = randPlayer(); // This is known as "Dynamic Method Dispatch".
             // We are ensuring that instance returned is never null.
             assert player != null;
             System.out.println("Player name :- " + player.getName() + "\nSpecial move :- "

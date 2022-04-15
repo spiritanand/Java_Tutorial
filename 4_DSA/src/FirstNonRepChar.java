@@ -1,4 +1,5 @@
 import java.util.*;
+
 class CountIndex{
 	int count;
 	int index;
@@ -17,7 +18,7 @@ class CountIndex{
 }
 
 public class FirstNonRepChar {
-	public static final int NO_OF_CHARS = 256;
+	public static final int NO_OF_CHARS = 256; // Constant
 	public static HashMap<Character,CountIndex> hm = new HashMap<>(NO_OF_CHARS);
 	
 	public static void countChars(String str){
@@ -27,7 +28,7 @@ public class FirstNonRepChar {
 				hm.get(str.charAt(i)).incCount(); // Gets the value attached to the character which is a
 				// CountIndex object, then increases the count by 1.
 			} else{
-				hm.put(str.charAt(i), new CountIndex(i)); // Create a new key, value pair.
+				hm.put(str.charAt(i), new CountIndex(i)); // Create a "new" key, value pair.
 			}
 		}
 	}

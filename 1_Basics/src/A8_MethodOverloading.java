@@ -9,11 +9,11 @@ public class A8_MethodOverloading {
         Answer --> If we need to do same kind of operation in different ways i.e. for different inputs.
          In the example described below, we are doing length conversion for different inputs (though this
          example is not that realistic.)
-         It is hard to find many different meaningful names for single action.
+         It is hard to find many meaningful names for single action.
 
         Q> Different ways of method overloading ?
         Answer --> Method overloading can be done by changing:
-        1.The number of parameters in two methods.
+        1.The number of parameters of methods.
         2.The data types of the parameters of methods.
         3.The Order of the parameters of methods.
 
@@ -24,7 +24,7 @@ public class A8_MethodOverloading {
 
 
         NOTE :- Method overloading cannot be done by changing the return type. The method signature needs to be
-         changed for this to work.
+        changed for this to work.
          */
         calcFeetAndInchesToCm(100); // 1 parameter is take as inches.
         calcFeetAndInchesToCm(6,1); // 2 parameters takes feet and inches.
@@ -47,7 +47,6 @@ public class A8_MethodOverloading {
             double rem_inches = inches % 12;
             System.out.println(inches + " Inches is equal to " + feet + " feet and " + rem_inches + " inches");
             return calcFeetAndInchesToCm(feet, rem_inches);
-
         } else {
             System.out.println("Invalid Input!");
             return -1;
@@ -55,11 +54,11 @@ public class A8_MethodOverloading {
         /*
         The advantage of method overloading is that we just need to remember the single method name to do
         slightly different stuff based on the type and number of parameter passed.
-        Say when you want to sum 3, 5 and 7 numbers. Then for them you could just use the same method name as
+        Say when you want to sum 3, 5 and 7 numbers. Then for them, you could just use the same method name as
         sum and then pass on different parameters to it. This brings about consistency.
 
         Another great example in Java is the println method which is actually 10 different methods with the
-         name and depends on the type(s) of parameter we use.
+        name and depends on the type(s) of parameter we use.
          */
     }
 }

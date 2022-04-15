@@ -2,11 +2,10 @@ import java.util.Scanner;// This import statement is used to get the Scanner cla
 
 public class A13_ReadingInput {
     public static void main(String[] args) {
-        // Suppose we want to get the user to enter an input say, your name and age. In the previous section we
-        // discussed about parsing values from String. Here we will be talking about taking in user input and
-        // printing it and performing operations on it.
-        // For reading input we will use the class Scanner. It is a class that can parse primitive data types
-        // and String as well. It uses methods such as parseInt() internally.
+        // In the previous section we discussed parsing values from String. Here we will be talking about
+        // taking in user input and printing it and performing operations on it.
+        // For reading input we will use the class -> Scanner. It is a class that can parse primitive data
+        // types and String as well. It uses methods such as parseInt() internally.
 
         Scanner scanner = new Scanner(System.in);
         // We are using this built-in class to take in user input. We are using 'new' to use an instance of the
@@ -21,9 +20,9 @@ public class A13_ReadingInput {
             int age = scanner.nextInt(); // This will read the number.
             if ((age > 0) && age <= 125) { // This will check if the age of the user is in valid range.
                 scanner.nextLine();
-                // We are using this line so that the enter is registered separately and we
+                // We are using this line so that 'enter' is registered separately, and we
                 // do not skip any nextLine() method. We must always enter this to avoid any skipping.
-                // To experience this yourself comment out this statement an then check it will skip the
+                // To experience this yourself comment out this statement and then check it will skip the
                 // nextLine() method.
 
                 System.out.println("Enter your name :-");

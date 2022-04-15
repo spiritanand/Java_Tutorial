@@ -1,10 +1,10 @@
 public class B2_Inheritance {
         /*
-         For learning object oriented programming we can learn by looking at the real world objects like
+         For learning object-oriented programming we can learn by looking at the real world objects like
          cars, animals, etc. We can think of classes as virtual blueprints and objects as real world objects,
          things that have existence in the real world.
 
-         Take for instance computers. Computers are every where around us. All the computers have many things
+         Take for instance computers. Computers are everywhere around us. All the computers have many things
          in similar like they all have an on and an off switch, whereas they may operate on different
          operating systems, but the basic functionality of a computer is similar.
          So it would be waste of our computer class if we do not use the methods and fields already present

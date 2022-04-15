@@ -1,5 +1,5 @@
 public class B3_C_Body {
-    // Now lets make a few field variables.
+    // Field variables.
     private String material;
     private B3_C_Dimensions dimensions; // Check out the B3_C_Dimensions class. Dimensions is another class which
     // will be used in the class of Body. This is an example of "composition" as well.

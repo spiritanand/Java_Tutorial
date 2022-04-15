@@ -1,20 +1,20 @@
 /*
  Linked List(LL) is a linear data structure similar to arrays, but they are not stored in contiguous
- blocks of memory instead they are linked using pointers(reference).
+ blocks of memory instead they are linked using reference(pointers).
  
  LL does not require a specific upper limit(of size) to be inputted. Also, elements of LL can be
  easily manipulated i.e, it is very easy to insert or delete elements from a LL. The elements of LL
  are called nodes. A node has two parts, the data value and a pointer that points to the next node.
  The first node is called Head. The last node is called the Tail and it points to Null.
  
- One of the biggest drawbacks of a LL is that we cannot access elements randomly. Also, extra memory is
- used in saving the pointer values.
+ One of the biggest drawbacks of a LL is that we cannot access elements randomly.
+ Also, extra memory is used in saving the pointer values.
  
  Here we will be seeing how to perform operations such as insertion(anywhere in the LL), deletion(by position
  and key) and traversal on the LL.
  
  
- Note:- Here we have talked about Singly LL.
+ Note:- Here we have talked about "Singly LL".
 */
 
 // The class which will contain the LL.
@@ -45,7 +45,7 @@ class LinkedList {
 	}
 	
 	// Method to insert node at the start.
-	public void insertAtStart(int d) {
+	private void insertAtStart(int d) {
 		// Creating a new node to store the value.
 		Node curr_node = new Node(d);
 		
